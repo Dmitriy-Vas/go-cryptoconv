@@ -1,4 +1,4 @@
-package go_cryptoconv
+package cryptoconv
 
 import (
 	"log"

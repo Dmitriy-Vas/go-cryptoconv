@@ -1,4 +1,4 @@
-package go_cryptoconv
+package cryptoconv
 
 import (
 	"fmt"
@@ -88,7 +88,7 @@ func From(number string, unitname string) string {
 	unitFactor := new(big.Float).SetInt(unit.GetFactor())
 	tmp := new(big.Float)
 	tmp.Quo(bigFloatNumber, unitFactor)
-	tmpstr := fmt.Sprintf("%.f", tmp)
+	tmpstr := fmt.Sprintf("%.8f", tmp)
 
 	return tmpstr
 }
@@ -101,7 +101,7 @@ func To(number string, unitname string) string {
 	unitFactor := new(big.Float).SetInt(unit.GetFactor())
 	tmp := new(big.Float)
 	tmp.Mul(bigFloatNumber, unitFactor)
-	tmpstr := fmt.Sprintf("%.f", tmp)
+	tmpstr := fmt.Sprintf("%.8f", tmp)
 
 	return tmpstr
 }
