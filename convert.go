@@ -16,6 +16,10 @@ const (
 	Drop Factor = 0
 	// Waves 1 waves
 	Waves Factor = 0
+	// Prizm 1 prizm
+	Prizm Factor = 0
+	// PZM 1e2 prizm
+	PZM Factor = 2
 	// KWei (babbage) 1e3 wei
 	KWei Factor = 3
 	// MWei (lovelace) 1e6 wei
@@ -54,6 +58,8 @@ func (unit *Unit) InitUnit(unitname string) *Unit {
 		"wei":    Wei,
 		"drop":   Drop,
 		"waves":  Waves,
+		"prizm":  Prizm,
+		"pzm":    PZM,
 		"kwei":   KWei,
 		"mwei":   MWei,
 		"xrp":    XRP,

@@ -6,12 +6,12 @@ import (
 )
 
 func TestFromWaves(t *testing.T) {
-	res := From("100000000", "WVS")
+	res := From("100000", "WVS")
 	log.Println(res)
 }
 
 func TestToWaves(t *testing.T) {
-	res := To("1", "WVS")
+	res := To("0.001", "WVS")
 	log.Println(res)
 }
 
@@ -32,5 +32,15 @@ func TestFromDrop(t *testing.T) {
 
 func TestToDrop(t *testing.T) {
 	res := To("1", "XRP")
+	log.Println(res)
+}
+
+func TestFromPrizm(t *testing.T) {
+	res := From("100", "PZM")
+	log.Println(res)
+}
+
+func TestToPrizm(t *testing.T) {
+	res := To("1", "PZM")
 	log.Println(res)
 }
